@@ -15,7 +15,18 @@ _LOGGER = logging.getLogger(__name__)
 PROTECT_SENSOR_TYPES = [
     "co_status",
     "smoke_status",
-    "battery_health_state"
+    "battery_health_state",
+    "battery_level",
+    "born_on_date",
+    "replace_by_date",
+    "last_update",
+    "wired_or_battery",
+    "auto_away",
+    "night_light_enable",
+    "serial_number",
+    "component_wifi_test_passed",
+    "wifi_ip_address",
+    "software_version"
 ]
 
 
