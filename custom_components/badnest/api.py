@@ -286,6 +286,28 @@ class NestAPI():
                         self._map_nest_protect_state(sensor_data['smoke_status'])
                     self.device_data[sn]['battery_health_state'] = \
                         self._map_nest_protect_state(sensor_data['battery_health_state'])
+                    self.device_data[sn]['battery_level'] = \
+                        sensor_data["battery_level"]
+                    self.device_data[sn]['born_on_date'] = \
+                        sensor_data["born_on_date"]
+                    self.device_data[sn]['replace_by_date'] = \
+                        sensor_data["replace_by_date"]
+                    self.device_data[sn]['last_update'] = \
+                        sensor_data["last_update"]
+                    self.device_data[sn]['wired_or_battery'] = \
+                        sensor_data["wired_or_battery"]
+                    self.device_data[sn]['auto_away'] = \
+                        sensor_data["auto_away"]
+                    self.device_data[sn]['night_light_enable'] = \
+                        sensor_data["night_light_enable"]
+                    self.device_data[sn]['serial_number'] = \
+                        sensor_data["serial_number"]
+                    self.device_data[sn]['component_wifi_test_passed'] = \
+                        sensor_data["component_wifi_test_passed"]
+                    self.device_data[sn]['wifi_ip_address'] = \
+                        sensor_data["wifi_ip_address"]
+                    self.device_data[sn]['software_version'] = \
+                        sensor_data["software_version"]
                 # Temperature sensors
                 elif bucket["object_key"].startswith(
                         f"kryptonite.{sn}"):
